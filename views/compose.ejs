@@ -1,0 +1,21 @@
+<%-include('partials/header')-%>
+
+
+<h1>Compose</h1>
+<form action="" method="post">
+    <div class="mb-3">
+      <label for="title" class="form-label"><b>Title</b></label>
+      <input type="text" class="form-control" id="title" name="postTitle" required>
+     
+    </div>
+    <div class="mb-3">
+      <label for="post" class="form-label"><b>Post</b></label>
+      <textarea type="text" class="form-control" id="post"  name="postBody"></textarea>
+    </div>
+  
+    <button type="submit" class="btn btn-success" style="background-color: #30bced;">Submit</button>
+    <a href="/"  id="home-btn" class="btn btn-danger" style="background-color: #fc5130;">Back</a>
+  </form>
+
+
+<%-include('partials/footer')-%>

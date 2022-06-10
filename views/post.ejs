@@ -1,0 +1,15 @@
+<%-include('partials/header')-%>
+
+<h1><%=postHeader%></h1>
+<p><%=postBody%></p>
+
+
+<div class="postpage-btn">
+<a class="btn btn-success" href="/" style="background-color: #30bced;">Back</a>
+<form action="" method="post">
+    <input type="hidden" name="deletedPost" value="<%=postHeader%>"></input>
+    <button type="submit" class="btn btn-danger" id="'delete-btn" style="background-color: #fc5130;">delete post</button>
+</form>
+</div>
+
+<%-include('partials/footer')-%>
